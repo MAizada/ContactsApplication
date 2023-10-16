@@ -50,6 +50,7 @@ class PremiumViewController: UIViewController {
         let subscribeButtonFrame = CGRect(x: 50, y: 650, width: 300, height: 40)
         subscribeButton.frame = subscribeButtonFrame
         subscribeButton.backgroundColor = .systemTeal
+        subscribeButton.layer.cornerRadius = 10
         subscribeButton.setTitle("Subscribe", for: .normal)
         subscribeButton.addTarget(self, action: #selector(tap), for: .touchDown)
         self.view.addSubview(subscribeButton)
@@ -57,6 +58,7 @@ class PremiumViewController: UIViewController {
         let restoreButtonFrame = CGRect(x: 50, y: 700, width: 300, height: 40)
         restoreButton.frame = restoreButtonFrame
         restoreButton.backgroundColor = .systemFill
+        restoreButton.layer.cornerRadius = 10
         restoreButton.setTitle("Restore", for: .normal)
         restoreButton.addTarget(self, action: #selector(tap), for: .touchDown)
         self.view.addSubview(restoreButton)
